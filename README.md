@@ -55,6 +55,10 @@ Give **npm install --production** before zipping the source code.
 
 Linter dependencies (ESLint) and testing dependecies like Mocha, Istanbul should go to the dev dependecies
 
+**Routing**
+
+Routing handled by routes.JSON.
+Based on HTTP Endpoint and URL, cooresponding controller and method is resolved
 
 **Environment Variables**
 
