@@ -21,7 +21,7 @@ v1/
 v2/
 /rules
 
-***Sample Endpoint for a game microservice which is versioned - http://example.com/game/v1/players ***
+**Sample Endpoint for a game microservice which is versioned** - http://example.com/game/v1/players 
 
 
 
