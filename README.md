@@ -1,4 +1,4 @@
-# lambda-microservice
+# lambda-atlas-microservice
 
 
 - Each Microservice is versioned
@@ -25,8 +25,20 @@ Sample URL will be  http://example.com/game/v1/players
 
 Microservice 2 - Results
 
+Services like - Atlas, Lambda have free tiers. Use that when you start developing Apps in it,
+
 
 ## Mongo - Atlas
+
+Create an account in Mongo DB Atlas , a fully managed cloud Mongo Database.
+
+Create your database and collection. You can do this in console directly or through any IDE's like Mongo Compass
+
+Following database and collection is created.
+
+Database - game
+Colection - players
+
 
 ## Lambda
 
@@ -37,7 +49,11 @@ Deployment is straightforward for Lambda. You just have to Navigate to Lambda in
 
 When you zip your package, make sure your index.js is correctly mapped which you give in handler. 
 
-### Settings
+Environment Variables
+
+MONGODB_URI  mongodb+srv://dbUser:dbPassword@cluster0-aaa.mongodb.net/dbName?retryWrites=true
+
+Settings
 
 Lambda console have many settings like memory, timeout .etc.  You can configure as per your application load.
 
