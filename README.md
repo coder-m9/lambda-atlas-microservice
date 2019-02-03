@@ -51,6 +51,11 @@ Deployment is straightforward for Lambda. You just have to Navigate to Lambda in
 
 When you zip your package, make sure your index.js is correctly mapped which you give in handler. 
 
+Give **npm install --production** before zipping the source code.
+
+Linter dependencies (ESLint) and testing dependecies like Mocha, Istanbul should go to the dev dependecies
+
+
 **Environment Variables**
 
 DB Connection params, credentials, environemnt specific settings should go to the environment variables in Lambda
