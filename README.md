@@ -49,11 +49,13 @@ Deployment is straightforward for Lambda. You just have to Navigate to Lambda in
 
 When you zip your package, make sure your index.js is correctly mapped which you give in handler. 
 
-Environment Variables
+**Environment Variables**
+
+DB Connection params, credentials, environemnt specific settings should go to the environment variables in Lambda
 
 MONGODB_URI  mongodb+srv://dbUser:dbPassword@cluster0-aaa.mongodb.net/dbName?retryWrites=true
 
-Settings
+**Settings**
 
 Lambda console have many settings like memory, timeout .etc.  You can configure as per your application load.
 
@@ -88,6 +90,7 @@ You can also configure API Gateway for individual path depending on your use cas
 
 ## Mapping Custom Domain Names
 
+Steps to map the custom domain names
 
 1) Get a ACM( AWS Certifcation Manager) Certificate is the first step
 
