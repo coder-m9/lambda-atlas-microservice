@@ -21,7 +21,9 @@ v1/
 v2/
 /rules
 
-Sample URL will be  http://example.com/game/v1/players
+***Sample Endpoint for a game microservice which is versioned - http://example.com/game/v1/players ***
+
+
 
 Microservice 2 - Results
 
