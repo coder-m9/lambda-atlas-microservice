@@ -1,18 +1,18 @@
 # lambda-microservice
 
 
-Below are some common characteristics of microservices
-
 - Each Microservice is versioned
 
 - Under each version, you many have one more controller ( and its corresponding models). 
 Controller is a logical separation for microservice. Depending on how you want your service boundary, you may have either one or more controller in your microservice.
 
-- There will be multiple API endpoints / routes 
+- There will be multiple API endpoints / routes in a microservice
 
-Let's take a example sports managment application which have microservices such as Game, Results. 
+Let's take a example Game application which have microservices such as Game, Results. 
 
 Microservice 1 - Game
+
+Game microservice is versioned and have many API endpoints rules, players with different versions v1, v2
 
 v1/
 /rules
@@ -26,7 +26,7 @@ Sample URL will be  http://example.com/game/v1/players
 Microservice 2 - Results
 
 
-Lambda
+## Lambda
 
 
 Here each microservice represented as a single lambda.
@@ -37,7 +37,7 @@ When you zip your package, make sure your index.js is correctly mapped which you
 
 
 
-API Gateway
+## API Gateway
 
 1) Give {proxy+} save changes - For all wildcard requests.
 
@@ -60,7 +60,7 @@ You can also configure API Gateway for individual path depending on your use cas
 4) You can test your service from the generated URL
 
 
-Mapping Custom Domain Names
+## Mapping Custom Domain Names
 
 
 1) Get a ACM( AWS Certifcation Manager) Certificate is the first step
