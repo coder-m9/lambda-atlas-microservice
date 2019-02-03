@@ -1,0 +1,33 @@
+{
+	"v1": {
+		"controllermapping": {
+			"players": "players",
+			"results": "results"
+		},
+
+		"GET": {
+
+			"players": {
+				"/": "searchPlayers",
+				"aggr": "playerAggr"
+			},
+
+			"results": {
+				"/": "searchResults"
+			}
+
+		},
+
+		"POST": {
+
+			"players": {
+				"/": "createPlayers"
+			},
+
+			"results": {
+
+			}
+		}
+
+	}
+}
