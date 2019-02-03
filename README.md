@@ -26,6 +26,8 @@ Sample URL will be  http://example.com/game/v1/players
 Microservice 2 - Results
 
 
+## Mongo - Atlas
+
 ## Lambda
 
 
@@ -34,6 +36,14 @@ Here each microservice represented as a single lambda.
 Deployment is straightforward for Lambda. You just have to Navigate to Lambda in AWS console and upload your application Zip.along with node_modules and code.  You can also give a s3 path of the code.
 
 When you zip your package, make sure your index.js is correctly mapped which you give in handler. 
+
+### Settings
+
+Lambda console have many settings like memory, timeout .etc.  You can configure as per your application load.
+
+VPC Settings:
+
+Give VPC Settings if you have custom VPC for your application
 
 
 
